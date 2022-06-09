@@ -1,10 +1,10 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../../images/logo.png';
 import './Navbar.css';
 
 
-const Navbar = ({children}) => {
+const Navbar = ({ children }) => {
 
 
     const menuItems = <>
@@ -13,9 +13,9 @@ const Navbar = ({children}) => {
         <li><NavLink className='rounded-lg font-semibold' to="/blogs">Blogs</NavLink></li>
         <li><NavLink className='rounded-lg font-semibold' to="/reviews">Reviews</NavLink></li>
         <li><NavLink className='rounded-lg font-semibold' to="/myportfolio">Portfolio</NavLink></li>
-       
-        
-      
+
+
+
 
     </>
 
@@ -27,7 +27,13 @@ const Navbar = ({children}) => {
                 <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
                 <div class="drawer-content flex flex-col">
                     <div class="w-full navbar  px-10 bg-gray-100">
-                        <div class="flex-1 px-2 mx-2 custom"> <img src={logo} height={50} width={50} alt="" /> </div>
+                        <div class="flex-1 px-2 mx-2 custom">
+
+                            <Link to="/" className="btn btn-ghost normal-case"> <img src={logo} height={50} width={50} alt="" /> </Link>
+
+                             </div>
+
+
 
                         <div class="flex-none lg:hidden">
                             <label for="my-drawer-3" class="btn btn-square btn-ghost">
@@ -36,7 +42,7 @@ const Navbar = ({children}) => {
                         </div>
                         <div class="flex-none hidden lg:block">
                             <ul class="menu menu-horizontal text-black gap-x-4">
-                           {menuItems}                       
+                                {menuItems}
                             </ul>
                         </div>
                     </div>
