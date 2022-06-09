@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import myself from '../../../images/Myself.jpg';
+import coder1 from '../../../images/coder1.gif';
+import coder2 from '../../../images/coder2.gif';
+import coder3 from '../../../images/coder3.gif';
 const Banner = () => {
 
     const link = "https://drive.google.com/drive/u/0/my-drive";
@@ -9,7 +12,7 @@ const Banner = () => {
         <div>
             <div class="hero  my-10">
                 <div class="hero-content flex-col lg:flex-row-reverse">
-                    <img src={myself} class="max-w-xs rounded-lg shadow-2xl mb-10" />
+                    <img src={coder3} class=" rounded-lg  mb-10" alt='' />
                     <div className='px-6'>
                         <h1 class="text-5xl font-bold">I'm <span className='text-primary'>Nahid</span> Hossain</h1>
                         <p class="py-6  text-gray-600">I'm a Junior Front-End Web Developer with <span className='text-green-400 font-semibold' >M</span>
