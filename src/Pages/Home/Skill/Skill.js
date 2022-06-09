@@ -7,8 +7,17 @@ const Skill = () => {
     return (
         <div>
 
-            <h2 className='customSkill text-center text-4xl font-bold text-primary tracking-widest'>MY SKILLS</h2> <hr className='mt-10 ' />
-            <div className='my-10 px-10'>
+          
+           <div class="card w-80 bg-base-100 shadow-xl mx-auto my-20 ">
+                <div class="card-body bg-primary">
+                <h2 className='customSkill text-center text-4xl font-bold text-white tracking-widest '>MY SKILLS</h2>  <hr  />
+                </div>
+               
+            </div>
+           
+
+             
+            <div className='my-10 px-10 bg-rose-50 py-10'>
                 <div className='text-left lg:grid grid-cols-3'>
 
                     <div class="card w-72 bg-base-100 shadow-xl">
@@ -24,14 +33,14 @@ const Skill = () => {
                                 <p > <span className='text-gray-600 font-semibold'>Tailwind </span><progress class="progress progress-primary  w-56" value="75" max="100"></progress></p>
                                 <p > <span className='text-gray-600 font-semibold'>React </span><progress class="progress progress-primary  w-56" value="80" max="100"></progress></p>
                                 <p > <span className='text-gray-600 font-semibold'>React Router </span><progress class="progress progress-primary  w-56" value="65" max="100"></progress></p>
-                               
+
                             </div>
                         </div>
                     </div>
 
-                    <div class="card w-72 bg-base-100 shadow-xl my-6"> 
+                    <div class="card w-72 bg-base-100 shadow-xl my-6">
                         <div class="card-body bg-gray-100">
-                        <h2 class="card-title text-emerald-500">Back-End</h2> <hr />
+                            <h2 class="card-title text-emerald-500">Back-End</h2> <hr />
 
                             <div className='py-10'>
 
@@ -44,7 +53,7 @@ const Skill = () => {
 
                     <div class="card w-72 bg-base-100 shadow-xl">
                         <div class="card-body ">
-                            <h2 class="card-title text-purple-500">Tools</h2> 
+                            <h2 class="card-title text-purple-500">Tools</h2>
 
                             <div className='py-10'>
 
