@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 import logo from '../../images/logo.png';
 import './Navbar.css';
-
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Navbar = ({ children }) => {
 
@@ -11,11 +11,9 @@ const Navbar = ({ children }) => {
         <li><NavLink className='rounded-lg font-semibold' to="/">Home</NavLink></li>
         <li><NavLink className='rounded-lg font-semibold' to="/about">About</NavLink></li>
         <li><NavLink className='rounded-lg font-semibold' to="/blogs">Blogs</NavLink></li>
-        <li><NavLink className='rounded-lg font-semibold' to="/reviews">Reviews</NavLink></li>
-        <li><NavLink className='rounded-lg font-semibold' to="/myportfolio">Portfolio</NavLink></li>
-
-
-
+        <li><NavLink className='rounded-lg font-semibold' to="/contact">Contact</NavLink></li>
+        
+        {/* contact */}
 
     </>
 
@@ -23,17 +21,13 @@ const Navbar = ({ children }) => {
 
     return (
         <div>
-            <div class="drawer">
+            <div class="drawer" >
                 <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
                 <div class="drawer-content flex flex-col">
-                    <div class="w-full navbar  px-10 bg-gray-100">
+                    <div class="w-full navbar px-10 bg-gray-100">
                         <div class="flex-1 px-2 mx-2 custom">
-
                             <Link to="/" className="btn btn-ghost normal-case"> <img src={logo} height={50} width={50} alt="" /> </Link>
-
-                             </div>
-
-
+                        </div>
 
                         <div class="flex-none lg:hidden">
                             <label for="my-drawer-3" class="btn btn-square btn-ghost">
