@@ -2,7 +2,9 @@ import React from 'react';
 import './Contact.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocation, faUser, faMobile, faMessage, } from '@fortawesome/free-solid-svg-icons'
-
+import linkedin from '../../../images/linkedin.png';
+import facebook from '../../../images/facebook.png';
+import github from '../../../images/github.png';
 const Contact = () => {
     return (
         <div >
@@ -18,13 +20,21 @@ const Contact = () => {
 
                 <div class="card w-80 bg-rose-100 text-neutral-content my-4 mx-auto ">
                     <div class="card-body text-black ">
-                        <h2 class="card-title">Contact Information</h2>
+                        <h2 class=" text-2xl font-semibold text-center">Contact Information</h2>
+
+                        <span className='flex justify-center my-4'>
+                            <a href="https://www.linkedin.com/in/md-nahid-hossain-a8522218a/" target=" _blank"><img src={linkedin} className="w-8" alt="" /></a>
+                            <a href="https://www.facebook.com/mdnahid.shuvo.7330/" target=" _blank"><img src={facebook} className="w-8 mx-4" alt="" /></a>
+                            <a href="https://github.com/Nahid30" target=" _blank"><img src={github} className="w-8" alt="" /></a>
+                        </span>
 
                         <p className='my-2'> Name:<br />  <FontAwesomeIcon className='text-white mr-2  h-6' icon={faUser} />  MD Nahid Hossain</p>
                         <p className='my-2'> Phone: <br /> <FontAwesomeIcon className='text-white mr-2 h-6 ' icon={faMobile} />  +8801918346144</p>
-                        <p className='my-2'> Email: <br /> <FontAwesomeIcon className='text-white mr-2 h-6 ' icon={faMessage} /> nahidbd.855@gmail.com</p>
+                        <p className='my-2'> Email: <br /> <FontAwesomeIcon className='text-white mr-2 h-6 ' icon={faMessage} /> nahid.bd855@gmail.com</p>
                         <p className='my-2'> Location: <br /> <FontAwesomeIcon className='text-white mr-2 h-6 ' icon={faLocation} /> Dhaka, Bangladesh</p>
+
                     </div>
+
                 </div>
 
 
@@ -33,7 +43,7 @@ const Contact = () => {
                     <div className=' my-10 px-4'>
 
                         <form action="https://formsubmit.co/d313f9fdac6b7ea6b5d03a8b19bd320c " method="POST">
-                        
+
 
 
                             <input type="name" placeholder="Type Your Name" className="input w-full max-w-sm " required /> <br />
@@ -47,7 +57,7 @@ const Contact = () => {
 
                         </form>
 
-                       
+
                     </div>
                 </div>
 
