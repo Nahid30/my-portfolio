@@ -1,6 +1,10 @@
 import React from 'react';
 import myself from '../../images/Myself.jpg'
 
+
+
+
+
 const About = () => {
     return (
         <div>
@@ -18,16 +22,20 @@ const About = () => {
 
                     <h4 className='mt-2  text-justify'>Besides my study I'm learning Web development since 2020. Now you can call me a Junior Front-End Web developer. I love to making Websites and wants to explore new things everyday, And I like helping mindset.</h4>
                 </div>
-
-
             </div>
+
+
+
 
             <div class="card w-80 bg-base-100 shadow-xl mx-auto my-20 ">
                 <div class="card-body bg-primary">
-                <h2 className='customSkill text-center text-4xl font-bold text-white tracking-widest '>MY SKILLS</h2>  <hr  />
+                    <h2 className='customSkill text-center text-4xl font-bold text-white tracking-widest '>MY SKILLS</h2>  <hr />
                 </div>
-               
-            </div> 
+            </div>
+
+
+
+
 
 
             <div className='my-10 px-10 bg-rose-50 py-10'>

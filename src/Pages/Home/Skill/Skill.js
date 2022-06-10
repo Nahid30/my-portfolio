@@ -1,6 +1,34 @@
 import React from 'react';
+import html from '../../../images/About/html5.png';
+import css from '../../../images/About/css.png';
+import Bootstrap from '../../../images/About/bootstrap.png';
+import javaScript from '../../../images/About/JavaScript-logo.png';
+import Tailwind from '../../../images/About/Tailwind_CSS_Logo.svg.png';
+import es6 from '../../../images/About/es6.png';
+import react from '../../../images/About/react.png';
+import firebase from '../../../images/About/firebase.png';
+import node from '../../../images/About/node.png';
+import express from '../../../images/About/express-js.png';
+import mongodb from '../../../images/About/mongodb.png';
+import heroku from '../../../images/About/Heroku_logo.svg.png';
+import github from '../../../images/About/github.png';
+import netlify from '../../../images/About/netlify.png';
+import vscode from '../../../images/About/vsCode.png';
+import router from '../../../images/About/router.png';
 
+import { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+
+// import "./styles.css";
+
+// import required modules
+import { FreeMode, Pagination } from "swiper";
 
 
 const Skill = () => {
@@ -14,6 +42,67 @@ const Skill = () => {
                 </div>
                
             </div>
+
+
+            <div>
+                <Swiper
+                    slidesPerView={5}
+                    spaceBetween={30}
+                    freeMode={true}
+                    modules={[FreeMode, Pagination]}
+                    className="mySwiper"
+                >
+                   <SwiperSlide>
+                        <img src={html} className="h-24 w-30  mx-auto  " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={css} className="rounded-lg h-24 w-30 mx-auto  " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={Bootstrap} className=" h-24 w-30mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={Tailwind} className=" h-24 w-30 mx-auto  rounded-lg" alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={javaScript} className="rounded-lg h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={es6} className=" h-24 w-30 mx-auto rounded-lg" alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={react} className=" h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={router} className=" rounded-lg  h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={firebase} className=" h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={node} className=" h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={express} className=" h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={mongodb} className=" h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={heroku} className=" h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={github} className=" h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={netlify} className=" h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={vscode} className=" h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                   
+                </Swiper>
+            </div>
            
 
              
@@ -26,7 +115,7 @@ const Skill = () => {
 
                             <div className='py-10'>
 
-                                <p >  <span className='text-gray-600 font-semibold '>HTML </span><progress class="progress progress-primary  w-56" value="80" max="100"></progress></p>
+                                <p >  <span className='text-gray-600 font-semibold flex '>HTML</span><progress class="progress progress-primary  w-56" value="80" max="100"></progress></p>
                                 <p > <span className='text-gray-600 font-semibold '>CSS </span> <progress class="progress progress-primary  w-56" value="75" max="100"></progress> </p>
                                 <p > <span className='text-gray-600 font-semibold'>javaScript + ES6 </span><progress class="progress progress-primary  w-56" value="65" max="100"></progress></p>
                                 <p> <span className='text-gray-600 font-semibold'>Bootstrap </span> <progress class="progress progress-primary  w-56" value="80" max="100"></progress></p>
