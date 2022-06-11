@@ -21,30 +21,109 @@ import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
+// import "swiper/css";
+// import "swiper/css/free-mode";
+// import "swiper/css/pagination";
+
 import "swiper/css";
-import "swiper/css/free-mode";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 // import "./styles.css";
 
+
 // import required modules
-import { FreeMode, Pagination } from "swiper";
+// import { FreeMode, Pagination } from "swiper";
+
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 
 const Skill = () => {
     return (
         <div>
 
-          
-           <div class="card w-80 bg-base-100 shadow-xl mx-auto my-20 ">
+
+            <div class="card w-80 bg-base-100 shadow-xl mx-auto my-20 ">
                 <div class="card-body bg-primary">
-                <h2 className='customSkill text-center text-4xl font-bold text-white tracking-widest '>MY SKILLS</h2>  <hr  />
+                    <h2 className='customSkill text-center text-4xl font-bold text-white tracking-widest '>MY SKILLS</h2>  <hr />
                 </div>
-               
+
             </div>
 
+            {/* <Swiper
+                    slidesPerView={5}
+                    spaceBetween={30}
+                    freeMode={true}
+                    modules={[FreeMode, Pagination]}
+                    className="mySwiper"
+                > */}
 
-            <div>
+            <>
+                <Swiper
+                    spaceBetween={20}
+                    slidesPerView={5}
+                    centeredSlides={true}
+                    autoplay={{
+                        delay: 800,
+                        disableOnInteraction: false,
+                    }}
+                    navigation={true}
+                    modules={[Autoplay, Pagination, Navigation]}
+                    className="mySwiper"
+                >
+                     <SwiperSlide>
+                        <img src={html} className="h-24 w-30  mx-auto  " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={css} className="rounded-lg h-24 w-30 mx-auto  " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={Bootstrap} className=" h-28 w-32 mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={Tailwind} className=" h-28 w-30 mx-auto  rounded-lg" alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={javaScript} className="rounded-lg h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={es6} className=" h-24 w-30 mx-auto rounded-lg" alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={react} className=" h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={router} className=" rounded-lg  h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={firebase} className=" h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={node} className=" h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={express} className=" h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={mongodb} className=" h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={heroku} className=" h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={github} className=" h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={netlify} className=" h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={vscode} className=" h-24 w-30 mx-auto " alt="" />
+                    </SwiperSlide>
+                </Swiper>
+            </>
+
+
+            {/* <div>
                 <Swiper
                     slidesPerView={5}
                     spaceBetween={30}
@@ -52,7 +131,7 @@ const Skill = () => {
                     modules={[FreeMode, Pagination]}
                     className="mySwiper"
                 >
-                   <SwiperSlide>
+                    <SwiperSlide>
                         <img src={html} className="h-24 w-30  mx-auto  " alt="" />
                     </SwiperSlide>
                     <SwiperSlide>
@@ -100,12 +179,12 @@ const Skill = () => {
                     <SwiperSlide>
                         <img src={vscode} className=" h-24 w-30 mx-auto " alt="" />
                     </SwiperSlide>
-                   
-                </Swiper>
-            </div>
-           
 
-             
+                </Swiper>
+            </div> */}
+
+
+
             <div className='my-10 px-10 bg-rose-50 py-10'>
                 <div className='text-left lg:grid grid-cols-3'>
 

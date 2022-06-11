@@ -28,13 +28,35 @@ const MyProjects = () => {
                         <li>Features: <small>HomePage, All Product, Login-SignUp, Admin-Panel, Dashboard, Stripe.</small></li>
                         <li>Technology: <small>HTML, CSS, Tailwind, DaisyUI, JavaScript, React, React Router, React-Hook-Form, NodeJs, ExpressJs, MongoDB, CRUD, Firebase.</small></li>
 
-                        
-                            <a href="https://rapid-manufacturer.web.app/" target=" _blank" > <button className='btn btn-primary text-white' >Live Site</button> </a>
 
-                            <a href="https://github.com/Nahid30/Rapid-Manufacturer-Client" target=" _blank" > <button className='btn btn-xs text-white' >Client Code</button> </a>
-                            <a href="https://github.com/Nahid30/Rapid-Manufacturer-Server" target=" _blank" > <button className='btn btn-xs text-white' >Server Code</button> </a>
+                        <a href="https://rapid-manufacturer.web.app/" target=" _blank" > <button className='btn btn-primary text-white ' >Live Site</button> </a>
 
-                        
+                        <a href="https://github.com/Nahid30/Rapid-Manufacturer-Client" target=" _blank" > <button className='btn btn-xs text-white' >Client Code</button> </a>
+                        <a href="https://github.com/Nahid30/Rapid-Manufacturer-Server" target=" _blank" > <button className='btn btn-xs text-white' >Server Code</button> </a>
+
+
+
+                        <label for="my-modal-5" class="btn btn-xs">See Details</label>
+
+
+                        <input type="checkbox" id="my-modal-5" class="modal-toggle" />
+                        <div class="modal">
+                            <div class="modal-box w-11/12 max-w-5xl">
+                                <h3 class="font-bold text-lg text-primary text-center">Rapid Manufacturer</h3>
+                                <p>This is a Computer Parts Manufacturer company who supplies wholesale products to their clients.</p>
+                                <li>Features: <small>HomePage, All Product, Login-SignUp, Admin-Panel, Dashboard, Stripe.</small></li>
+                                <li>Technology: <small>HTML, CSS, Tailwind, DaisyUI, JavaScript, React, React Router, React-Hook-Form, NodeJs, ExpressJs, MongoDB, CRUD, Firebase.</small></li>
+
+                                <a href="https://github.com/Nahid30/Rapid-Manufacturer-Client" target=" _blank" > <button className='btn btn-xs text-white' >Client Code</button> </a>
+                                <a href="https://github.com/Nahid30/Rapid-Manufacturer-Server" target=" _blank" > <button className='btn btn-xs text-white' >Server Code</button> </a>
+
+                                <div class="modal-action">
+                                    <label for="my-modal-5" class="btn">Close</label>
+                                </div>
+                            </div>
+                        </div>
+
+
 
                     </div>
                 </div>
@@ -47,10 +69,10 @@ const MyProjects = () => {
                         <li>Features: <small>HomePage, All Item, Login-SignUp, CRUD Operation.</small></li>
                         <li>Technology: <small>HTML, CSS, React-Bootstrap, JavaScript, React, React Router, NodeJs, ExpressJs, MongoDB, CRUD, Firebase.</small></li>
 
-                        
-                            <a href="https://fruits-assignment-11.web.app/" target=" _blank"> <button className='btn btn-primary text-white' >Live Site</button> </a>
-                            <a href="https://github.com/Nahid30/Fresh-Fruit-Client" target=" _blank" > <button className='btn btn-xs text-white' >Client Code</button> </a>
-                            <a href="https://github.com/Nahid30/Fresh-Fruit-Server" target=" _blank" > <button className='btn btn-xs text-white' >Server Code</button> </a>
+
+                        <a href="https://fruits-assignment-11.web.app/" target=" _blank"> <button className='btn btn-primary text-white' >Live Site</button> </a>
+                        <a href="https://github.com/Nahid30/Fresh-Fruit-Client" target=" _blank" > <button className='btn btn-xs text-white' >Client Code</button> </a>
+                        <a href="https://github.com/Nahid30/Fresh-Fruit-Server" target=" _blank" > <button className='btn btn-xs text-white' >Server Code</button> </a>
 
                     </div>
                 </div>
@@ -63,9 +85,9 @@ const MyProjects = () => {
                         <li>Features: <small>HomePage, Services, Login-SignUp</small></li>
                         <li>Technology: <small>HTML, CSS, React-Bootstrap, JavaScript, React, React Router, Firebase</small></li>
 
-                        
-                            <a href="https://fir-assignment-10-7ed92.web.app/" target=" _blank"> <button className='btn btn-primary text-white' >Live Site</button> </a>
-                            <a href="https://github.com/Nahid30/PhotoGrapher" target=" _blank" > <button className='btn btn-xs text-white' >Client Code</button> </a>
+
+                        <a href="https://fir-assignment-10-7ed92.web.app/" target=" _blank"> <button className='btn btn-primary text-white' >Live Site</button> </a>
+                        <a href="https://github.com/Nahid30/PhotoGrapher" target=" _blank" > <button className='btn btn-xs text-white' >Client Code</button> </a>
                     </div>
                 </div>
 
@@ -80,7 +102,7 @@ const MyProjects = () => {
 
 
 
-        </div>
+        </div >
     );
 };
 
