@@ -18,11 +18,11 @@ const Contact = () => {
 
             <div className='lg:grid grid-cols-2 mb-20 '>
 
-                <div class="card w-80 bg-rose-100 text-neutral-content my-4 mx-auto ">
+                <div class="card w-10/12 bg-rose-100 text-neutral-content my-4 mx-auto  ">
                     <div class="card-body text-black ">
-                        <h2 class=" text-2xl font-semibold text-center">Contact Information</h2>
+                        <h2 class=" text-2xl font-semibold ">Contact Information</h2>
 
-                        <span className='flex justify-center my-4'>
+                        <span className='flex  my-4'>
                             <a href="https://www.linkedin.com/in/md-nahid-hossain-a8522218a/" target=" _blank"><img src={linkedin} className="w-8" alt="" /></a>
                             <a href="https://www.facebook.com/mdnahid.shuvo.7330/" target=" _blank"><img src={facebook} className="w-8 mx-4" alt="" /></a>
                             <a href="https://github.com/Nahid30" target=" _blank"><img src={github} className="w-8" alt="" /></a>
@@ -39,19 +39,21 @@ const Contact = () => {
 
 
 
-                <div className='flex justify-center items-center  mx-auto  bg-rose-100 rounded'>
+                <div className='flex justify-center items-center my-4  mx-auto  bg-rose-100 rounded-lg'>
                     <div className=' my-10 px-4'>
 
-                        <form action="https://formsubmit.co/d313f9fdac6b7ea6b5d03a8b19bd320c " method="POST">
+                        <form action="https://formsubmit.co/your@email.com" method="POST">
 
 
 
-                            <input type="name" placeholder="Type Your Name" className="input w-full max-w-sm " required /> <br />
-                            <input type="email" placeholder="Enter Your Email" className="input w-full max-w-sm mt-4" required /> <br />
+                            <div className='text-center'>
+                                <input type="name" placeholder="Type Your Name" className="input w-full max-w-sm " required /> <br />
+                                <input type="email" placeholder="Enter Your Email" className="input w-full max-w-sm mt-4" required /> <br />
 
-                            <input type="text" placeholder="Subject" className="input w-full max-w-sm my-4" required />
+                                <input type="text" placeholder="Subject" className="input w-full max-w-sm my-4" required />
 
-                            <textarea className="textarea input w-full max-w-sm" placeholder="Your Message" required ></textarea> <br />
+                                <textarea className="textarea input w-full max-w-sm" placeholder="Your Message" required ></textarea>
+                            </div> <br />
 
                             <div className='text-center mt-2'><button className='btn btn-primary text-white'>Send Message</button></div>
 

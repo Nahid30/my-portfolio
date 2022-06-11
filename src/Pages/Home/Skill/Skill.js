@@ -71,7 +71,7 @@ const Skill = () => {
                     modules={[Autoplay, Pagination, Navigation]}
                     className="mySwiper"
                 >
-                     <SwiperSlide>
+                    <SwiperSlide>
                         <img src={html} className="h-24 w-30  mx-auto  " alt="" />
                     </SwiperSlide>
                     <SwiperSlide>
@@ -188,7 +188,7 @@ const Skill = () => {
             <div className='my-10 px-10 bg-rose-50 py-10'>
                 <div className='text-left lg:grid grid-cols-3'>
 
-                    <div class="card w-72 bg-base-100 shadow-xl">
+                    <div class="card w-72 bg-base-100 shadow-xl mx-auto">
                         <div class="card-body  ">
                             <h2 class="card-title text-cyan-600">Font-End</h2>
 
@@ -206,20 +206,22 @@ const Skill = () => {
                         </div>
                     </div>
 
-                    <div class="card w-72 bg-base-100 shadow-xl my-6">
-                        <div class="card-body bg-gray-100">
-                            <h2 class="card-title text-emerald-500">Back-End</h2> <hr />
+
+                    <div class="card w-72 bg-base-100 shadow-xl mx-auto">
+                        <div class="card-body ">
+                            <h2 class="card-title text-emerald-500">Back-End</h2>
 
                             <div className='py-10'>
 
-                                <p> <span className='text-gray-600 font-semibold'>Node </span><progress class="progress progress-primary  w-56" value="30" max="100"></progress></p>
+                            <p> <span className='text-gray-600 font-semibold'>Node </span><progress class="progress progress-primary  w-56" value="30" max="100"></progress></p>
                                 <p> <span className='text-gray-600 font-semibold'>Express </span><progress class="progress progress-primary  w-56" value="35" max="100"></progress></p>
                                 <p > <span className='text-gray-600 font-semibold'>MongoDB </span><progress class="progress progress-primary  w-56" value="45" max="100"></progress></p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card w-72 bg-base-100 shadow-xl">
+
+                    <div class="card w-72 bg-base-100 shadow-xl mx-auto">
                         <div class="card-body ">
                             <h2 class="card-title text-purple-500">Tools</h2>
 

@@ -1,3 +1,4 @@
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Pages/About/About';
@@ -25,6 +26,13 @@ function App() {
         <Footer></Footer>
       </Navbar>
 
+      
+
+        <MessengerCustomerChat
+          pageId="7330" appId="362599275968420"
+        />
+
+      
 
     </div>
   );
